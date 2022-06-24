@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <div>
+        <h1>Näin korkojen nousu vaikuttaa asuntolainasi kustannuksiin</h1>
+      </div>
+      <div class="input-output">
+        <h2>Lainan tiedot:</h2>
+        <p>
+          <label for="amount">Lainan määrä:</label>
+          <input id="amount" value="100000" type="number" min="1"></input>
+          euroa.
+        </p>
+        <p>
+          <label for="time">Jäljellä oleva laina-aika:</label>
+          <input id="time" value="20" type="number" min="1" max="30"></input>
+          vuotta.
+        </p>
+        <p>
+          <label for="percent">Korkoprosentti:</label>
+          <input id="percent" value="3.0" type="range" min="0.1" max="10" step="0.1"></input>
+          <span id="show-percent"></span>
+          %.
+        </p>
+      </div>
+      <div class="input-output">
+        <h2>Lainan kustannukset:</h2>
+  
+        <div>
+          Kuukausierä: <span id="monthly-payment">555</span> euroa.
+        </div>
+        <div>
+          Korko yhteensä: <span id="total-interest">80611</span> euroa.
+        </div>
+        <div>
+          Lainan kokonaiskustannus: <span id="total-cost">180611</span> euroa.
+        </div>
+      </div>
+      <div id="disclaimer">
+        <p>Huom: Laskuri ei huomio pankkien permiä kustannuksia lainan hoidosta.</p>
+      </div>
+    </div>
+  </body>
+</html>
