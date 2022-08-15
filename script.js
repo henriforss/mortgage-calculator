@@ -10,8 +10,6 @@ const calculateMortgage = () => {
   const showPercent = document.getElementById("show-percent")
   showPercent.innerText = percent.value
 
-
-
   /* Get ouput fields. */
   const monthlyPayment = document.getElementById("monthly-payment")
   const totalInterest = document.getElementById("total-interest")
@@ -55,8 +53,3 @@ const calculateMortgage = () => {
 }
 
 calculateMortgage()
-
-
-
-
-
