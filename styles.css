@@ -37,13 +37,13 @@ input {
 
 #percent {
   width: 132px;
-  justify-self: center;
+  vertical-align: middle;
 }
 
 .app {
   display: block;
   position: relative;
-  margin: 10px auto;
+  margin: 0 auto;
   background-color: #eee;
   width: 350px;
   padding: 10px;
